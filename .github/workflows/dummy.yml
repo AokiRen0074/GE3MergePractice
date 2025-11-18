@@ -1,0 +1,14 @@
+# 特に何もしないGitHub Actions
+name: dummy
+
+on:
+  # GitHubのActionsタブから手動で実行できるようにする
+  workflow_dispatch:
+
+jobs:
+  dummy:
+    name: 特に何もしない
+    runs-on: ubuntu-latest
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
